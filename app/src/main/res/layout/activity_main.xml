@@ -6,36 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_TempCalc"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onTempCalcClick"
-        android:text="Temp Calc"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btn_DistCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onDistCalcClick"
-        android:text="Distance Calc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_TempCalc" />
+        <Button
+            android:id="@+id/btn_TempCalc"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTempCalcClick"
+            android:layout_margin="4dp"
+            android:text="Temp Calc" />
+
+        <Button
+            android:id="@+id/btn_DistCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textAllCaps="false"
+            android:onClick="onDistCalcClick"
+            android:text="Distance Calc" />
 
 
-    <Button
-        android:id="@+id/btn_AreaCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onAreaCalcClick"
-        android:text="Area Calc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_DistCalc" />
+        <Button
+            android:id="@+id/btn_AreaCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textAllCaps="false"
+            android:onClick="onAreaCalcClick"
+            android:text="Area Calc"
+             />
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/fl_Calcs"
@@ -45,6 +54,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_AreaCalc" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
