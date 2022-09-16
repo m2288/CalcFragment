@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import pro.niyaz.calcfragment.fragments.AreaCalcFragment;
-import pro.niyaz.calcfragment.fragments.DistanceCalcFragment;
+import pro.niyaz.calcfragment.fragments.ContactListFragment;
+import pro.niyaz.calcfragment.fragments.SimpleListFragment;
 import pro.niyaz.calcfragment.fragments.TempCalcFragment;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_TempCalc;
-    Button btn_DistCalc;
-    Button btn_AreaCalc;
+    Button btn_SimpleListCalc;
+    Button btn_Contacts;
     FrameLayout fl_Calcs;
 
 
@@ -31,28 +31,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTempCalcClick(View view) {
         TempCalcFragment tempCalcFragment = new TempCalcFragment();
-        System.out.println("onTempCalcClick");
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fl_Calcs, tempCalcFragment);
         fragmentTransaction.commit();
     }
 
-    public void onDistCalcClick(View view) {
-        DistanceCalcFragment distanceCalcFragment = new DistanceCalcFragment();
-        System.out.println("onDistCalcClick");
+    public void onSimpleListClick(View view) {
+        SimpleListFragment simpleListFragment = new SimpleListFragment();
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fl_Calcs, distanceCalcFragment);
+        fragmentTransaction.replace(R.id.fl_Calcs, simpleListFragment);
         fragmentTransaction.commit();
     }
 
-    public void onAreaCalcClick(View view) {
-        AreaCalcFragment areaCalcFragment = new AreaCalcFragment();
-        System.out.println("onAreaCalcClick");
+    public void onContactsClick(View view) {
+        ContactListFragment contactListFragment = new ContactListFragment();
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fl_Calcs, areaCalcFragment);
+        fragmentTransaction.replace(R.id.fl_Calcs, contactListFragment);
         fragmentTransaction.commit();
     }
 }

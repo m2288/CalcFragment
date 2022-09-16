@@ -26,23 +26,23 @@
             android:text="Temp Calc" />
 
         <Button
-            android:id="@+id/btn_DistCalc"
+            android:id="@+id/btn_SimpleListCalc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:textAllCaps="false"
-            android:onClick="onDistCalcClick"
-            android:text="Distance Calc" />
+            android:onClick="onSimpleListClick"
+            android:text="Simple List" />
 
 
         <Button
-            android:id="@+id/btn_AreaCalc"
+            android:id="@+id/btn_Contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:textAllCaps="false"
-            android:onClick="onAreaCalcClick"
-            android:text="Area Calc"
+            android:onClick="onContactsClick"
+            android:text="Contacts"
              />
     </LinearLayout>
 

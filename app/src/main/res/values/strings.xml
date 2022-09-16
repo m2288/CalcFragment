@@ -2,4 +2,43 @@
     <string name="app_name">CalcFragment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="os_list">
+        <item> Android </item>
+        <item> IOS </item>
+        <item> Blackberry OS </item>
+        <item> Windows Phone OS </item>
+        <item> Solaris OS </item>
+        <item> Ubuntu </item>
+        <item> Windows </item>
+        <item> CentOS </item>
+        <item> Debian </item>
+        <item> Linux </item>
+        <item> Fedora </item>
+        <item> Manjaro </item>
+        <item> Taizen </item>
+        <item> Harmony OS </item>
+        <item> Kali Linux </item>
+
+    </string-array>
+    <string-array name="contact_names">
+        <item> John S. Ponce </item>
+        <item> Christine T. Thorsen </item>
+        <item> Blackberry OS </item>
+        <item> Esther N. Mikkelsen </item>
+        <item> Marie T. Frandsen </item>
+        <item> Kelli R. Younger </item>
+        <item> Scott S. Hernandez </item>
+        <item> Justin E. Rivera </item>
+        <item> Ryan D. Gunn </item>
+        <item> Charla J. Book </item>
+        <item> Maria B. Hagemann </item>
+        <item> Chester K. Pike </item>
+        <item> Michael A. Davidson</item>
+        <item> Laverne I. Kilgore </item>
+        <item> Lee N. Siegel </item>
+        <item> Mark L. Regina </item>
+        <item> Mary W. Diebold </item>
+        <item> Sofia Fernandes Castro </item>
+
+    </string-array>
 </resources>
