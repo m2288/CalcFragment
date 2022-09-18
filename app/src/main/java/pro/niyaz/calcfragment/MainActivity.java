@@ -1,24 +1,17 @@
 package pro.niyaz.calcfragment;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.FrameLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import pro.niyaz.calcfragment.fragments.ContactListFragment;
 import pro.niyaz.calcfragment.fragments.SimpleListFragment;
 import pro.niyaz.calcfragment.fragments.TempCalcFragment;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_TempCalc;
-    Button btn_SimpleListCalc;
-    Button btn_Contacts;
-    FrameLayout fl_Calcs;
-
 
     FragmentTransaction fragmentTransaction;
     FragmentManager fragmentManager;
