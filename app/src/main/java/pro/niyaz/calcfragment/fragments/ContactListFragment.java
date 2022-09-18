@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import pro.niyaz.calcfragment.ContactAdapter;
+import pro.niyaz.calcfragment.MainActivity;
 import pro.niyaz.calcfragment.R;
 
 public class ContactListFragment extends Fragment {
@@ -25,11 +27,14 @@ public class ContactListFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ListView listView = getActivity().findViewById(R.id.lv_c_list);
+        String[] contacts = getResources().getStringArray(R.array.contact_names) ;
+        ContactAdapter contactAdapter = new ContactAdapter(getActivity(), R.layout.list_contact_layout, contacts);
+        listView.setAdapter(contactAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String [] contact_list = getResources().getStringArray(R.array.contact_names);
-                //Toast.makeText(ContactListFragment.this, "" + (position+1) + ": " + contact_list[position], Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "" + (position+1) + ": " + contact_list[position], Toast.LENGTH_SHORT).show();
                 System.out.println(position+1 + ": " + contact_list[position]);
             }
         });
@@ -38,6 +43,7 @@ public class ContactListFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 

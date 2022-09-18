@@ -34,7 +34,7 @@ public class ContactAdapter extends ArrayAdapter<String> {
         convertView = li.inflate(layoutResourceId, parent, false);
         TextView contact_name = convertView.findViewById(R.id.contact_name);
         TextView contact_number = convertView.findViewById(R.id.contact_number);
-        contact_name.setText("Contact");
+        contact_name.setText(data[position]);
         contact_number.setText(data[position]);
 
         return convertView;
